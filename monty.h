@@ -121,4 +121,11 @@ void divop(stack_t **stack, unsigned int nline);
 void mulop(stack_t **stack, unsigned int nline);
 void modop(stack_t **stack, unsigned int nline);
 
+/* pull and pall */
+void custom_push(custom_stack_t **custom_stack, unsigned int line_num);
+void custom_print_all(custom_stack_t **custom_stack, unsigned int line_num);
+void free_custom_stack(custom_stack_t **custom_stack);
+void custom_nop(custom_stack_t **custom_stack, unsigned int line_num);
+int custom_is_alpha(int ch);
+
 #endif /* MONTY_H */
